@@ -241,7 +241,7 @@ body {
   height: 80px;
 }
 .motto-wrapper {
-  background-image: url(../images/img-background.jpg);
+  background-image: url(../images/background.jpg);
   height: 600px;
   display: flex;
 }
@@ -332,12 +332,9 @@ body {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
+
 .svg-media:hover {
   background-color: var(--active-background-color);
   fill: var(--active-text-color);
@@ -385,4 +382,23 @@ border-color: var(--active-background-color);
 .image-box:hover{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 cursor:pointer;
+}
+.social-media {
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  justify-content: center;
+}
+.svg-list {
+  display: flex;
+  margin: auto;
+}
+.icon-dis{
+  width: 20px;
+  height: 20px;
+}
+.size {
+    width: 20px;
+  height: 20px;
 }
