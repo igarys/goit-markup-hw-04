@@ -360,8 +360,7 @@ body {
 }
 .logo-icon {
   fill: var(--logo);
-  max-width: 170px;
-  max-height: 92px;
+  
 }
 .logo-icon:hover{
   fill: var(--active-background-color);
