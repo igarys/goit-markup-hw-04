@@ -47,14 +47,10 @@ body {
   text-decoration: none;
   color: var(--primary-color);
 }
-/* .list a:hover {
+.list .list-item:hover,
+.list .list-item:focus {
   color: var(--active-background-color);
 }
-
-.list-item:active {
-  color: var(--active-background-color);
-} */
-
 .list-item-contact {
   text-decoration: none;
   color: var(--description-color);
