@@ -4,6 +4,7 @@
   --active-text-color: #ffffff;
   --active-background-color: #2196f3;
   --background-color: #2f303a;
+  --logo: #AFB1B8;
 }
 
 body {
@@ -241,7 +242,7 @@ body {
   height: 80px;
 }
 .motto-wrapper {
-  background-image: url(../images/background.jpg);
+    background-image: url(../images/background.jpg);
   height: 600px;
   display: flex;
 }
@@ -260,8 +261,6 @@ body {
   text-align: center;
   justify-content: center;
   width: 696px;
-  /* flex-wrap: wrap; */
-  /* display: flex; */
 }
 
 .image-box {
@@ -304,12 +303,13 @@ body {
 
 /* Hw 04 */
 .svg {
+ fill: var(--description-color);
   margin-right: 10px;
+  
 }
 
 .svg:hover {
-  stroke: var(--active-background-color);
-  /* fill: var(--active-background-color); */
+  fill: var(--active-background-color);
   cursor: pointer;
 }
 .feature {
@@ -334,13 +334,10 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.svg-media:hover {
-  background-color: var(--active-background-color);
-  fill: var(--active-text-color);
-  color: var(--active-text-color);
-  stroke: var(--active-text-color);
+.svg-media:hover{
+    background-color: var(--active-background-color);
 }
+
 .logo-list{
  list-style-type: none;
   display: flex;
@@ -362,8 +359,12 @@ body {
   align-items: center;
 }
 .logo-icon {
-  width: 106px;
-  height: 60px;
+  fill: var(--logo);
+  max-width: 170px;
+  max-height: 92px;
+}
+.logo-icon:hover{
+  fill: var(--active-background-color);
 }
 .logo-box:hover{
 border-color: var(--active-background-color);
@@ -395,10 +396,18 @@ cursor:pointer;
   margin: auto;
 }
 .icon-dis{
+  fill:var(--logo);
   width: 20px;
   height: 20px;
 }
-.size {
-    width: 20px;
-  height: 20px;
+ 
+.icon-dis:hover {
+  /* background-color: var(--active-background-color); */
+  fill: var(--active-text-color);
+}
+.footer-icons {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-color{
+  fill: var(--active-text-color);
 }
