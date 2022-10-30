@@ -47,17 +47,23 @@ body {
   text-decoration: none;
   color: var(--primary-color);
 }
-.list a:hover {
+/* .list a:hover {
   color: var(--active-background-color);
 }
 
 .list-item:active {
   color: var(--active-background-color);
-}
+} */
 
 .list-item-contact {
   text-decoration: none;
   color: var(--description-color);
+}
+.list-item-contact:hover{
+  color: var(--active-background-color);
+}
+.list-item-contact:hover .svg {
+fill: var(--active-background-color);
 }
 .header {
   font-family: inherit;
@@ -308,10 +314,10 @@ body {
   
 }
 
-.svg:hover {
+/* .svg:hover {
   fill: var(--active-background-color);
   cursor: pointer;
-}
+} */
 .feature {
   width: 270px;
   height: 120px;
@@ -334,10 +340,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-.svg-media:hover{
+.svg-media:hover {
     background-color: var(--active-background-color);
 }
-
+.svg-media:hover .icon-dis {
+  fill: var(--active-text-color);
+}
 .logo-list{
  list-style-type: none;
   display: flex;
@@ -360,14 +368,12 @@ body {
 }
 .logo-icon {
   fill: var(--logo);
-  
 }
-.logo-icon:hover{
+.logo-box:hover .logo-icon {
   fill: var(--active-background-color);
+  border-color: var(--active-background-color);
 }
-.logo-box:hover{
-border-color: var(--active-background-color);
-}
+
 .footer-social{
   color: var(--active-text-color);
   font-size: 14px;
@@ -400,10 +406,6 @@ cursor:pointer;
   height: 20px;
 }
  
-.icon-dis:hover {
-  /* background-color: var(--active-background-color); */
-  fill: var(--active-text-color);
-}
 .footer-icons {
   background-color: rgba(255, 255, 255, 0.1);
 }
