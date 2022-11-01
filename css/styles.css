@@ -279,6 +279,10 @@ fill: var(--active-background-color);
 .apps {
   border: 1px solid #eeeeee;
 }
+.apps:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+cursor: pointer;
+}
 .team {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -339,6 +343,7 @@ fill: var(--active-background-color);
 }
 .svg-media:hover {
     background-color: var(--active-background-color);
+    cursor: pointer;
 }
 .svg-media:hover .icon-dis {
   fill: var(--active-text-color);
@@ -371,6 +376,7 @@ fill: var(--active-background-color);
 }
 .logo-box:hover{
   border-color: var(--active-background-color);
+  cursor: pointer;
 }
 .footer-social{
   color: var(--active-text-color);
